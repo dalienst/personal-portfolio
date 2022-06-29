@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalienst | Software Developer</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="w3-black w3-content" style="max-width: 1600px;">
+    
+    <!-- Side menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index: 3; width: 300px;" id="mySidebar"><br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <img src = "images/me.jpeg" style="width: 45%;" class="w3-round"><br><br>
+            <h4><b>MY PORTFOLIO</b></h4>
+            <p class="w3-text-grey">Dalienst Owino</p>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal">
+                <i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO
+            </a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal">
+                <i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT
+            </a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal">
+                <i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT
+            </a>
+        </div>
+        <div class="w3-panel w3-large">
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </nav>
+
+    <!-- Overlay when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Page content -->
+    <div class="w3-main" style="margin-left: 300px;">
+        <!-- Header -->
+        <header id="portfolio">
+            <a href="#">
+                <img src="images/me.jpeg" alt="Dalienst" style="width: 65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity">
+            </a>
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </span>
+            <h1><b>My Portfolio</b></h1>
+        </header>
+
+        <!-- <div class="w3-row-padding w3-padding-16" id="about">
+            <div class="w3-col m6">
+                <img src="images/meaway.jpeg" alt="me" style="width: 100%;">
+            </div>
+            <div class="w3-col m6">
+                <img src="images/meoffice.jpeg" alt="me" style="width: 100%;">
+            </div>
+        </div> -->
+
+        <div class="w3-container w3-padding-large" style="margin-bottom: 32px;">
+            <h4><b>About Me</b></h4>
+            <p>Kenyan. I believe in quality, a product is valued by its quality. I am a Software Developer who loves travelling and inventing.
+                Put your money in and you won"t regret it.
+            </p>
+            <hr>
+
+            <h4><b>My Skills</b></h4>
+            <!-- Progress bar -->
+            <p class="w3-wide">HTML & CSS</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding-small w3-center" style="width: 95%;">95%</div>
+            </div>
+
+            <p class="w3-wide">Web Design</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding-small w3-center" style="width: 90%;">90%</div>
+            </div>
+
+            <p class="w3-wide">Blogging</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding-small w3-center" style="width: 90%;">90%</div>
+            </div>
+
+            <p class="w3-wide">Python</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding-small w3-center" style="width: 70%;">70%</div>
+            </div>
+
+            <p class="w3-wide">JavaScript</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding-small w3-center" style="width: 60%;">60%</div>
+            </div>
+
+            <p class="w3-wide">ReactJS</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding-small w3-center" style="width: 55%;">55%</div>
+            </div>
+
+            <!-- Add resume -->
+            <!-- <p>
+                <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                  <i class="fa fa-download w3-margin-right"></i>Download Resume
+                </button>
+            </p> -->
+
+            <hr>
+
+            <h4><b>Price List</b></h4>
+            <!-- Pricing table -->
+            <div class="w3-row-padding" style="margin:0 -16px;">
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-white w3-center w3-card w3-hover-shadow">
+                        <li class="w3-black w3-xlarge w3-padding-32">Websites</li>
+                        <li class="w3-padding-16">Business | 5000/- </li>
+                        <li class="w3-padding-16">Personal | 3500/- </li>
+                        <li class="w3-padding-16">Static and single paged | 2500/- </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Order</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-white w3-center w3-card w3-hover-shadow">
+                        <li class="w3-black w3-xlarge w3-padding-32">Work</li>
+                        <li class="w3-padding-16">Portfolio | 2000/-</li>
+                        <li class="w3-padding-16">Online Resume | 1500/-</li>
+                        <li class="w3-padding-16">Resume | 500/- </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Order</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-white w3-center w3-card w3-hover-shadow">
+                        <li class="w3-black w3-xlarge w3-padding-32">Designs</li>
+                        <li class="w3-padding-16">Website | 1500/- </li>
+                        <li class="w3-padding-16">Logos | 1500/- </li>
+                        <li class="w3-padding-16">Business Cards | 1500/- </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Order</button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+
+            <!-- Contact section -->
+            <div class="w3-padding-32 w3-content w3-text-white" id="contact" style="margin-bottom: 64px;">
+                <h2>Contact Me</h2>
+                <hr class="w3-opacity">
+
+                <div class="w3-section">
+                    <a href="https://goo.gl/maps/xjQhx2B849M1jmrh9" style="text-decoration: none;"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Nairobi, KE</a>
+                    <a href="tel:+254710584581" style="text-decoration: none;"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>Call Me</a>
+                    <a href="mailto:oduordalienst@gmail.com" style="text-decoration: none;"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin"></i>Email: oduordalienst@gmail.com</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
